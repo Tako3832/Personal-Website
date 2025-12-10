@@ -1,0 +1,352 @@
+/* ============================================================
+   CONTACT PAGE BASE
+============================================================ */
+
+.contact-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-inner {
+  width: 100%;
+  max-width: 1680px;
+  padding: 60px;
+  margin: 0 auto;
+}
+
+
+/* ============================================================
+   HEADER
+============================================================ */
+
+.contact-label {
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #bbbbbb;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.contact-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.contact-subtitle {
+  max-width: 680px;
+  color: #cccccc;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.contact-pill-row {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contact-pill {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #444;
+  font-size: 12px;
+  color: #ffffff;
+  backdrop-filter: blur(4px);
+}
+
+
+/* ============================================================
+   GRID LAYOUT
+============================================================ */
+
+.contact-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+
+.contact-card-span {
+  grid-column: span 2;
+}
+
+
+/* ============================================================
+   CONTACT CARDS
+============================================================ */
+
+.contact-card {
+  background: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 16px;
+  padding: 26px;
+  transition: 0.25s ease;
+}
+
+.contact-card:hover {
+  border-color: #ffffff;
+  transform: translateY(-6px);
+  box-shadow: 0 18px 50px rgba(0,0,0,0.45);
+}
+
+.contact-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.contact-icon-badge {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: #111;
+  border: 1px solid #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-card-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+/* ROWS INSIDE CARDS */
+
+.contact-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.contact-row-icon {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.contact-row-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #bbbbbb;
+}
+
+.contact-row-link {
+  font-size: 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contact-row-link:hover {
+  text-decoration: underline;
+}
+
+.contact-row-text {
+  font-size: 14px;
+  color: #cccccc;
+}
+
+
+/* LIST STYLING */
+
+.contact-list {
+  margin-top: 6px;
+  padding-left: 20px;
+  line-height: 1.6;
+  font-size: 15px;
+  color: #dddddd;
+}
+
+
+/* TAG ROW IN WHY REACH OUT */
+
+.contact-tag-row {
+  margin-top: 18px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.contact-tag {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid #444;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+}
+
+
+/* ============================================================
+   RESUME SECTION
+============================================================ */
+
+.resume-section {
+  margin-top: 70px;
+}
+
+.resume-header {
+  font-size: 28px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.resume-card {
+  background: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 22px;
+  padding: 34px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  transition: 0.25s ease;
+}
+
+.resume-card:hover {
+  border-color: #ffffff;
+  transform: translateY(-6px);
+  box-shadow: 0 18px 50px rgba(0,0,0,0.45);
+}
+
+.resume-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.resume-desc {
+  color: #cccccc;
+  margin-bottom: 16px;
+}
+
+.resume-meta {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.resume-pill {
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid #555;
+  font-size: 12px;
+}
+
+.resume-updated {
+  color: #999999;
+  font-size: 13px;
+}
+
+.resume-btn {
+  background: #ffffff;
+  color: #000000;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.resume-btn:hover {
+  background: #dddddd;
+  transform: translateY(-3px);
+}
+
+.resume-btn-icon {
+  font-size: 18px;
+}
+
+
+/* RESUME ICON PREVIEW */
+
+.resume-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-icon-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.resume-icon-box:hover {
+  transform: translateY(-6px);
+  border-color: #ffffff;
+  background: rgba(255,255,255,0.15);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.5);
+}
+
+.resume-icon {
+  font-size: 64px;
+  color: #ffffff;
+  opacity: 0.8;
+  transition: 0.25s ease;
+}
+
+.resume-icon-box:hover .resume-icon {
+  opacity: 1;
+  transform: scale(1.07);
+}
+
+
+/* ============================================================
+   FOOTNOTE
+============================================================ */
+
+.contact-status {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #999999;
+  font-size: 14px;
+}
+
+.contact-dot {
+  width: 6px;
+  height: 6px;
+  background: #999999;
+  border-radius: 50%;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+
+@media (max-width: 1100px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card-span {
+    grid-column: span 1;
+  }
+
+  .resume-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-inner {
+    padding: 24px;
+  }
+}

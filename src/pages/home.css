@@ -1,0 +1,135 @@
+/* src/pages/home.css */
+
+.home-page {
+  display: flex;
+  align-items: center;
+}
+
+/* 2-column fixed layout */
+.home-layout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: stretch;
+}
+
+/* LEFT COLUMN */
+.home-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-tag {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 14px;
+}
+
+.hero-title {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  color: #e0e0e0;
+  margin-bottom: 24px;
+}
+
+.hero-meta-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.hero-meta-block {
+  flex: 1;
+}
+
+.meta-label {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+}
+
+.meta-value {
+  font-size: 14px;
+}
+
+/* RIGHT COLUMN – TECH FRAME WITH IMAGE */
+.home-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero-frame-card {
+  border: 3px solid var(--border-strong);
+  border-radius: 18px;
+  padding: 20px;
+  background: var(--bg-deeper);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hero-frame-inner {
+  border-radius: 12px;
+  background: #181818;
+  padding: 16px;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 12px;
+}
+
+.hero-image-wrap {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.hero-caption {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-caption-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.hero-caption-sub {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* Footer chips */
+.hero-frame-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hero-chip {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 6px 10px;
+}

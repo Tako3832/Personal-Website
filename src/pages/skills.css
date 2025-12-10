@@ -1,0 +1,346 @@
+/* ---------------------- Skills Page Layout ---------------------- */
+
+.skills-section {
+  width: 100%;
+  padding: 80px 0;
+}
+
+.section-inner {
+  width: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.section-tag {
+  letter-spacing: 4px;
+  font-size: 14px;
+  color: #bbbbbb;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.skills-intro {
+  max-width: 600px;
+  color: #cccccc;
+  margin-bottom: 50px;
+}
+
+/* ---------------------- Headers ---------------------- */
+
+.skills-header {
+  font-size: 26px;
+  margin: 48px 0 18px;
+  font-weight: 600;
+}
+
+/* ---------------------- Skills Grid ---------------------- */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+/* Base button reset for skill cards */
+.skill-card {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+/* Skill Cards (tech + soft) */
+
+.skill-card.tech,
+.skill-card.soft {
+  background: #1a1a1a;
+  border: 2px solid #444;
+  padding: 24px;
+  border-radius: 14px;
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+.skill-card.tech:hover,
+.skill-card.soft:hover {
+  border-color: #ffffff;
+  transform: translateY(-4px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.5);
+}
+
+.skill-card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.skill-card p {
+  color: #bbbbbb;
+  line-height: 1.4;
+}
+
+/* ---------------------- Certification Tabs (Underline Style) ---------------------- */
+
+.cert-tabs {
+  display: flex;
+  gap: 24px;
+  margin: 8px 0 24px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #333333;
+  overflow-x: auto;
+}
+
+.cert-tab {
+  position: relative;
+  padding: 8px 0;
+  border: none;
+  background: transparent;
+  color: #9ca3af;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.cert-tab::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  background: transparent;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.cert-tab:hover {
+  color: #e5e7eb;
+}
+
+.cert-tab.active {
+  color: #ffffff;
+}
+
+.cert-tab.active::after {
+  background: #ffffff;
+  transform: scaleX(1);
+}
+
+/* ---------------------- Certifications Grid ---------------------- */
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 12px;
+  padding-bottom: 80px;
+}
+
+.cert-card {
+  background: #f9fafb;
+  border-radius: 18px;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    border-color 0.25s ease, background 0.25s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.6);
+  border-color: rgba(15, 23, 42, 0.25);
+  background: #ffffff;
+}
+
+.cert-preview-wrap {
+  background: #e5e7eb;
+  padding: 10px 10px 0;
+}
+
+.cert-preview {
+  width: 100%;
+  height: 190px;
+  border-radius: 12px 12px 0 0;
+  border: 1px solid #e5e7eb;
+  background: #e5e7eb;
+}
+
+.cert-content {
+  padding: 18px 20px 20px;
+  color: #0f172a;
+}
+
+.cert-meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.cert-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #e0f2fe;
+  color: #0f172a;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.cert-provider {
+  font-size: 12px;
+  color: #6b7280;
+  white-space: nowrap;
+}
+
+.cert-content h3 {
+  font-size: 16px;
+  margin: 4px 0 14px;
+  font-weight: 600;
+  color: #020617;
+}
+
+/* Button */
+
+.cert-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 14px;
+  background: #020617;
+  color: #ffffff;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  transition: background 0.2s ease, transform 0.2s ease,
+    box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.cert-btn:hover {
+  background: #111827;
+  border-color: #0f172a;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.35);
+  transform: translateY(-1px);
+}
+
+/* ---------------------- MODAL POPUP ---------------------- */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(4px);
+  z-index: 2000;
+}
+
+.modal-box {
+  width: 90%;
+  max-width: 650px;
+  background: #121212;
+  border: 2px solid #555;
+  padding: 36px 36px 28px;
+  border-radius: 18px;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.modal-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.modal-desc {
+  font-size: 16px;
+  color: #cccccc;
+  margin-bottom: 18px;
+}
+
+.modal-list-item {
+  color: #dedede;
+  padding: 6px 0;
+  border-bottom: 1px solid #333;
+  font-size: 14px;
+}
+
+.modal-list-item:last-child {
+  border-bottom: none;
+}
+
+.modal-close {
+  margin-top: 22px;
+  background: #ffffff;
+  color: #000000;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.modal-close:hover {
+  background: #e5e5e5;
+  transform: translateY(-1px);
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------------------- Responsive ---------------------- */
+
+@media (max-width: 1200px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cert-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 800px) {
+  .section-inner {
+    padding: 0 24px;
+  }
+
+  .skills-grid,
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+}
