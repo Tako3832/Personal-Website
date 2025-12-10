@@ -10,8 +10,8 @@ export default function Home() {
         <div className="home-left">
           <div className="hero-tag">PORTFOLIO · RYANN TAY</div>
           <h1 className="hero-title">
-            Human-centred <span className="accent-text">HR & AI</span> for
-            high-performance teams.
+            Where <span className="accent-text">people, systems, and AI</span> turn complex people workflows
+            into simple, intelligent systems.
           </h1>
           <p className="hero-subtitle">
             I bridge <span className="accent-text">HR, Business Analytics, Finance</span> and <span className="accent-text">AI</span> to design systems, tools, 
